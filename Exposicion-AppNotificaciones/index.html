@@ -32,13 +32,9 @@
                     <div class="row" id="noti">
                         {{#each item1 in filteredResults}}
                         <div class='row fila-notificacion'>
-                            {{#if picture}}
-                            <div class='col-md-4 foto'><img class='img-circle img-persona' {{bind-attr src = "picture"}}"/>
+
+                            <div class='col-md-4 foto'><img class='img-circle img-persona' src ="{{url}}" alt="icon"/>
                             </div>
-                            {{else}}
-                            <div class='col-md-4 foto'><img class='img-circle img-persona' src="img/no_pic.jpg"/>
-                            </div>
-                            {{/if}}
                             <div class='col-md-8 mensaje'>
                                 <p class='texto'>{{item1.message}}</p>
                             </div>
